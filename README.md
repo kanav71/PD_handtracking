@@ -36,7 +36,7 @@ This repo documents steps and scripts used to train a hand detector using Tensor
 
 -------------------- Adjustment of bounding boxes and video cropping --------------
 
-#### Bounding box adjustments folder contains important codes for adjusting the bounding boxes and then cropping the videos as per the bounding boxes.
+#### Bounding box adjustments folder contains important codes for adjusting the bounding boxes, and then cropping the videos as per the adjusted bounding boxes.
  - csv files : files used across different codes.
  - __script_to_find_largest_bounding_box.ipynb__ : Finding the box of max area (post outlier treatment)
  - __script_tocheck_adjusted_labels.py__ : Plotting coordinates on video to check if coordinates adjusted properly
