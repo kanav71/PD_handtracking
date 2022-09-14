@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
     cv2.namedWindow('Single-Threaded Detection', cv2.WINDOW_NORMAL)
 
-    while num_frames<=610: # kanav - keeping hard frame count as problem with cv2. Unable to recognise end of frames
+    while num_frames<=round(cap.get(7)): # kanav - keeping hard frame count as problem with cv2. Unable to recognise end of frames
         # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
         ret, image_np = cap.read()
         if ret is None:
