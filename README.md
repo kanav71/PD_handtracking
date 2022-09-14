@@ -31,4 +31,6 @@ This repo documents steps and scripts used to train a hand detector using Tensor
 - Visualize detected bounding detection_boxes. In this repo, this is done in the `utils/detector_utils.py` script by the `draw_box_on_image` method.
 
 ## Main script for detection of hands region 
-- myenv_single_threaded.py : Main script for reading camera video input detection and detecting. Takes a set of command line flags to set parameters such as `--display` (visualize detections), image parameters `--width` and `--height`, videe `--source` (0 for camera) etc.
+- (Single file) __myenv_single_threaded.py__ : Main script for reading camera video input detection and detecting. Takes a set of command line flags to set parameters such as `--display` (visualize detections), image parameters `--width` and `--height`, videe `--source` (0 for camera) etc.
+- (Multiple files) __script_for_all_bounding_box_coordinates.py__ : If you have all the files in a directory, you can update and run the below script for generating the bounding box coordinates for each frame across all videos. 
+  
